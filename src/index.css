@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"]:focus ~ .input-text{
+    @apply text-black bg-gray-100 transform -translate-y-5 -translate-x-4 scale-75; 
+}
+input[type="text"]:focus ~ .input-texte{
+    @apply text-black bg-white transform -translate-y-5 -translate-x-4 scale-75; 
+}
+textarea[type="text"]:focus ~ .input-text{
+    @apply text-black bg-gray-100 md:transform md:-translate-y-5  md:-translate-x-4  md:scale-75; 
+}
